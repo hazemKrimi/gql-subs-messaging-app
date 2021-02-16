@@ -1,0 +1,11 @@
+overwrite: true
+schema: 'https://e2fb58a7a479.ngrok.io'
+generates:
+  src/types/api.tsx:
+    plugins:
+      - 'typescript'
+      - 'typescript-operations'
+      - 'typescript-react-apollo'
+  ./graphql.schema.json:
+    plugins:
+      - 'introspection'
